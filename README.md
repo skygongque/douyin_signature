@@ -1,22 +1,33 @@
 # douyin_signature
 
-### 环境需求
-node puppeteer express superagent
-=================================
+## 环境需求
+### node puppeteer express superagent
+自行npm 或 cnpm 安装
 
-### 在本地搭建服务生成指定uid的signature
-搭建完成后
-========
+
+## 在本地搭建服务生成指定uid的signature
+### 搭建完成后
+
 可请求接口
+
 `
 http://localhost:5000/user?uid=102064772608
 `
+
 返回内容示例
 
+![返回内容示例](https://github.com/skygongque/douyin_signature/blob/master/example/success.png)
 
-### 更进一步传入uid直接返回主页json数据
+
+## 更进一步传入uid直接返回主页json数据
 请求接口
+
 `
 http://localhost:5000/data?uid=102064772608
 `
+
 返回内容示例
+
+![返回内容示例](https://github.com/skygongque/douyin_signature/blob/master/example/data_example.png)
+
+
