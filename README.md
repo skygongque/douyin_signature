@@ -31,7 +31,8 @@ http://localhost:5000/data?uid=102064772608
 ![返回内容示例](https://github.com/skygongque/douyin_signature/blob/master/example/data_example.png)
 
 ## 文件夹介绍
-服务搭建的代码在node_douyin_service文件夹
+服务搭建的代码在node_douyin_service2文件夹
+
 python调用服务示例在douyinpy文件夹
 
 ## 总结
