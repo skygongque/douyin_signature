@@ -98,7 +98,8 @@ async function get_signature_for_get(uid, tac) {
 async function getTac(uid) {
     console.log('getting tac...')
     try {
-        var url = `https://www.iesdouyin.com/share/user/${uid}`
+        var url = `https://www.amemv.com/share/user/${uid}`
+        // var url = `https://www.iesdouyin.com/share/user/${uid}`
         var res = await superagent.get(url)
             .set({
                 'user-agent': 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36',

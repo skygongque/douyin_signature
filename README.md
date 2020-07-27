@@ -1,4 +1,33 @@
 # douyin web 端 signature
+[参考代码](https://github.com/CharlesPikachu/Video-Downloader)
+
+## 更新
+
+在抖音`douyin7.27`文件夹  
+需要环境node.js  
+superagent模块  
+
+## 使用方法
+
+到`douyin7.27`文件夹  
+
+安装依赖
+```
+npm install superagent
+```
+
+## 获取数据
+
+```
+node get_data.js
+```
+
+**效果**
+![效果](./douyin7.27/example.png)
+
+
+---
+原来版本需要puppeteer
 
 ## 环境需求
 ### node puppeteer express superagent
