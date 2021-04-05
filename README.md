@@ -19,3 +19,5 @@ node get_data.js
 2. `uid` `useragent` `sec_uid` 和`signature`并没有绑定  
 3. 这个版本校验较弱可能只是过渡版本，可能很快失效  
 
+## 浏览器环境补充
+[canvas相关环境补充](./canvas相关环境补充/readme.md)
