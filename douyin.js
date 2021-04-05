@@ -24,12 +24,12 @@ window = {
         _zid:2
     },
 }
-function get_sign(uid, aaaa, ua) {
-    aaaa = aaaa.replace(/\\u02a1/g, "\u02a1").replace(/\\x7f/g, "\x7f").replace(/\\x80/g, "\x80").replace(/\\x1c/g, "\x1c").replace(/\\x06/g, "\x06").replace(/\\x02/g, "\x02").replace(/\\\'/g, "\'").replace(/\\ufffb/g, "\ufffb").replace(/\\\\/g, "\\").replace(/\\uffce/g, "\uffce")
+function get_sign(uid, ua) {
+    // aaaa = aaaa.replace(/\\u02a1/g, "\u02a1").replace(/\\x7f/g, "\x7f").replace(/\\x80/g, "\x80").replace(/\\x1c/g, "\x1c").replace(/\\x06/g, "\x06").replace(/\\x02/g, "\x02").replace(/\\\'/g, "\'").replace(/\\ufffb/g, "\ufffb").replace(/\\\\/g, "\\").replace(/\\uffce/g, "\uffce")
     navigator = {
         userAgent: ua,
     }
-    tac = aaaa;
+    // tac = aaaa;
     var e = {};
     (function anonymous() {
         function e(e, a, r) {
@@ -257,7 +257,7 @@ function get_sign(uid, aaaa, ua) {
     ()('gr$Daten Иb/s!l y͒yĹg,(lfi~ah`{mv,-n|jqewVxp{rvmmx,&effkx[!cs"l".Pq%widthl"@q&heightl"vr*getContextx$"2d[!cs#l#,*;?|u.|uc{uq$fontl#vr(fillTextx$$龘ฑภ경2<[#c}l#2q*shadowBlurl#1q-shadowOffsetXl#$$limeq+shadowColorl#vr#arcx88802[%c}l#vr&strokex[ c}l"v,)}eOmyoZB]mx[ cs!0s$l$Pb<k7l l!r&lengthb%^l$1+s$jl  s#i$1ek1s$gr#tack4)zgr#tac$! +0o![#cj?o ]!l$b%s"o ]!l"l$b*b^0d#>>>s!0s%yA0s"l"l!r&lengthb<k+l"^l"1+s"jl  s&l&z0l!$ +["cs\'(0l#i\'1ps9wxb&s() &{s)/s(gr&Stringr,fromCharCodes)0s*yWl ._b&s o!])l l Jb<k$.aj;l .Tb<k$.gj/l .^b<k&i"-4j!+& s+yPo!]+s!l!l Hd>&l!l Bd>&+l!l <d>&+l!l 6d>&+l!l &+ s,y=o!o!]/q"13o!l q"10o!],l 2d>& s.{s-yMo!o!]0q"13o!]*Ld<l 4d#>>>b|s!o!l q"10o!],l!& s/yIo!o!].q"13o!],o!]*Jd<l 6d#>>>b|&o!]+l &+ s0l-l!&l-l!i\'1z141z4b/@d<l"b|&+l-l(l!b^&+l-l&zl\'g,)gk}ejo{cm,)|yn~Lij~em["cl$b%@d<l&zl\'l $ +["cl$b%b|&+l-l%8d<@b|l!b^&+ q$sign ', [e])
     return e.sign(uid)
 }
-
+// console.log(get_sign('1234567',"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36"))
 module.exports = {
     get_sign
 }
