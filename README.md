@@ -8,7 +8,7 @@ npm install
 ```
 ## run service
 ```
-node service.js
+node server.js
 ```
 
 ## python 调用示例
