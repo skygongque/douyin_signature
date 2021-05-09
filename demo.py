@@ -55,7 +55,9 @@ def get_one_page(sec_uid, max_cursor):
     if data_json and 'aweme_list' in data_json.keys():
         aweme_list = data_json['aweme_list']
         for item in aweme_list:
-            src = item['video']['play_addr']['url_list'][-1]
+            # src = item['video']['play_addr']['url_list'][-1]
+            temp_src = item['video']['download_addr']['url_list'][0]
+            src = re.sub('&watermark=1','&watermark=0',temp_src,re.S)
             desc = item['desc']
             page_data.append({
                 'src': src,
@@ -93,6 +95,6 @@ def main(sec_uid):
 
 if __name__ == "__main__":
     # sec_uid=MS4wLjABAAAAhELKHHFsEbZLtSChS8qdlUcXkwEMHrc7Y2rygE8MJTw
-    # main("MS4wLjABAAAAhELKHHFsEbZLtSChS8qdlUcXkwEMHrc7Y2rygE8MJTw")
-    main('MS4wLjABAAAA8cCaZ5AGaJ9dtpdnEzVrWkk_ir4rez3M-cZT5EE3Doc')
+    main("MS4wLjABAAAAhELKHHFsEbZLtSChS8qdlUcXkwEMHrc7Y2rygE8MJTw")
+    # main('MS4wLjABAAAA8cCaZ5AGaJ9dtpdnEzVrWkk_ir4rez3M-cZT5EE3Doc')
     # main("MS4wLjABAAAAshzXgVS8HqF8PomFlCATZjkjC48Az0d8tk28RXRgrbA")
