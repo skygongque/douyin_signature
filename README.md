@@ -1,6 +1,6 @@
 # douyin web signature
-此项目仅用于科研学习，请勿用于商业用途否则造成的后果与作者无关
-
+此项目仅用于科研学习，请勿用于商业用途否则造成的后果与作者无关  
+This project is only used for research and study, please do not use it for commercial purposes, otherwise the consequences will not be related to the author.  
 # usage
 ## install dependencies
 ```
